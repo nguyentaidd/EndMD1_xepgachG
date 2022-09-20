@@ -1,0 +1,53 @@
+:root{
+    --width: 400px;
+    --boardWidth: 500px;
+}
+
+.game{
+    width: var(--boardWidth);
+    height: 500px;
+    margin:auto;
+    border: 3px solid orangered;
+}
+
+.slider{
+    visibility: hidden;
+    background-color: red;
+    height: 20px;
+    width: 100px;
+    position: relative;
+
+}
+#slider1{
+    visibility: visible;
+}
+.animate{
+    animation: side 3s infinite linear;
+}
+@keyframes side{
+    0%{left:0px}
+    50%{left:var(--width)}
+    100%{left:0px}
+}
+
+button{
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: 3px solid black;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    display: block;
+}
+#btn{
+    background-color: blue;
+}
+#btn:hover, #restart:hover{
+    background-color: yellow;
+}
+#btn:active, #restart:active{
+    background-color: red;
+}
+#restart{
+    background-color: blue;
+    display: none;
+}
