@@ -27,7 +27,7 @@
     visibility: visible;
 }
 .animate{
-    animation: side 3s infinite linear;
+    animation: side 2s infinite linear;
 }
 @keyframes side{
     0%{left:0px}
