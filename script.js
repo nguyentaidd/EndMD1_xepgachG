@@ -22,6 +22,13 @@ function stopSliding(sliderMoving, sliderAbove, sliderB4){
     var leftB4 = parseFloat(window.getComputedStyle(sliderB4).getPropertyValue("left"));
     var difference = left - leftB4;
     var absDifference = Math.abs(difference);
+    if(difference>width||difference<-width) {
+        document.getElementById("restart").style.display = "block";
+        var score = "Điểm của bạn: ".concat(counter - 2);
+        btn.setAttribute("onclick", "");
+        alert(score)
+        Location.reload();
+    }
     if(difference>0){
         left = left + absDifference;
     }else {
