@@ -3,6 +3,11 @@
     --boardWidth: 500px;
 }
 
+.chu{
+    text-align: center;
+    color: white;
+}
+
 .game{
     width: var(--boardWidth);
     height: 500px;
